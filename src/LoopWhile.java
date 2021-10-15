@@ -14,7 +14,7 @@ public class LoopWhile {
 
 		int idade;
 		double media = 0;
-		int numeroAlunos = 1;
+		int numeroAlunos = 0;
 		int qtd;
 
 		System.out.println("Quantos alunos tem na turma?");
@@ -23,7 +23,7 @@ public class LoopWhile {
 		while (numeroAlunos < qtd) {
 			System.out.println("Digite a idade do aluno " + numeroAlunos);
 			idade = leitor.nextInt();
-			numeroAlunos = numeroAlunos + 1;
+			numeroAlunos++;
 			media = media + idade;
 		}
 
